@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100vh;
+}
+
+.content {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 0 1px 2px #00000033;
+    background-color: #ffffff;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.text-system {
+    font-size: 18px;
+    font-weight: 600;
+    color: #676767;
+}
+
+.text-error {
+    font-size: 14px;
+    color: #ec0606;
+    align-self: baseline;
+}
+
+.text-sign-up {
+    font-size: 16px;
+    color: #676767;
+}
+
+.text-strong-link {
+    cursor: pointer;
+}
+
+.text-strong-link a {
+    text-decoration: none;
+    margin-left: 9px;
+    color: #676767;
+}
