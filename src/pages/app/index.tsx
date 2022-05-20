@@ -1,8 +1,4 @@
-import React from 'react';
-
 import RoutesApp from '../../routes';
-
-import './styles.css';
 
 import { AuthProvider } from '../../contexts/auth-context';
 

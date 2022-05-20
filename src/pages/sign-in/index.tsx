@@ -6,7 +6,7 @@ import useAuth from '../../hooks/use-auth';
 import InputType from '../../components/InputType';
 import Button from '../../components/Button';
 
-import './index.css';
+import './styles.css';
 
 const SignIn = () => {
     const { signIn }: any = useAuth();
@@ -29,13 +29,13 @@ const SignIn = () => {
             return;
         }
 
-        navigate('/dashboard');
+        navigate('/app-finance/dashboard');
     };
 
     return (
-        <div className='container'>
-            <label className='text-system'>SISTEMA DE LOGIN</label>
-            <div className='content'>
+        <div className='sign-in'>
+            <label className='label-system'>SISTEMA DE LOGIN</label>
+            <div className='sign-in-content'>
                 <InputType
                     type='email'
                     data-testid='email'
@@ -53,12 +53,12 @@ const SignIn = () => {
                     value={password || ''}
                     onChange={(e: any) => [setPassword(e.target.value), setError('')]}
                 />
-                <label className='text-error'>{error}</label>
+                <label className='label-error'>{error}</label>
                 <Button text='Entrar' className='btn btn--primary btn--full-width' onClick={handleSignIn} />
-                <label className='text-sign-in'>
+                <label className='label-sign'>
                     Não tem uma conta?
                     <strong className='text-strong-link'>
-                        <Link to='/sign-up'>Registre-se</Link>
+                        <Link to='/app-finance/sign-up'>Registre-se</Link>
                     </strong>
                 </label>
             </div>

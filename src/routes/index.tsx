@@ -13,9 +13,9 @@ const RoutesApp = () => {
         <BrowserRouter>
             <Fragment>
                 <Routes>
-                    <Route path='/dashboard' element={<PrivateRoutes Item={Dashboard} SignIn={SignIn} />} />
-                    <Route path='/' element={<SignIn />} />
-                    <Route path='/sign-up' element={<SignUp />} />
+                    <Route path='/app-finance/dashboard' element={<PrivateRoutes Item={Dashboard} SignIn={SignIn} />} />
+                    <Route path='/app-finance' element={<SignIn />} />
+                    <Route path='/app-finance/sign-up' element={<SignUp />} />
 
                     <Route path='*' element={<SignIn />} />
                 </Routes>
