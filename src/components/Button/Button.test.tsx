@@ -76,8 +76,14 @@ describe('Test <Button />', () => {
   });
 
   test('Should match snapshot', () => {
+    const fn = jest.fn();
     const { container } = render(
-      <Button text="Any Text" className="any-class-style" />
+      <Button
+        text="Any Text"
+        onClick={fn}
+        disabled={false}
+        className="any-class-style"
+      />
     );
 
     expect(container).toMatchSnapshot();
