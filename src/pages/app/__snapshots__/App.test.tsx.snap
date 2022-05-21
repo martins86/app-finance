@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <App /> Should match snapshot 1`] = `
+<div>
+  <div
+    class="app"
+  >
+    <div
+      class="sign-in"
+    >
+      <label
+        class="label-system"
+      >
+        SISTEMA DE LOGIN
+      </label>
+      <div
+        class="sign-in-content"
+      >
+        <input
+          class="input-primary"
+          placeholder="Digite seu E-mail"
+          type="email"
+          value=""
+        />
+        <input
+          class="input-primary"
+          placeholder="Digite sua Senha"
+          type="password"
+          value=""
+        />
+        <label
+          class="label-error"
+        />
+        <button
+          class="btn btn--primary btn--full-width"
+          data-testid="button"
+          title="Entrar"
+          type="button"
+        >
+          Entrar
+        </button>
+        <label
+          class="label-sign"
+        >
+          Não tem uma conta?
+          <strong
+            class="text-strong-link"
+          >
+            <a
+              href="/app-finance/sign-up"
+            >
+              Registre-se
+            </a>
+          </strong>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;

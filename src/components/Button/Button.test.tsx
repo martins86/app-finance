@@ -74,4 +74,12 @@ describe('Test <Button />', () => {
     // Assert
     expect(elButton).toBeEnabled();
   });
+
+  test('Should match snapshot', () => {
+    const { container } = render(
+      <Button text="Any Text" className="any-class-style" />
+    );
+
+    expect(container).toMatchSnapshot();
+  });
 });

@@ -4,7 +4,7 @@ import { AuthProvider } from '../../contexts/auth-context';
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="app">
       <AuthProvider>
         <RoutesApp />
       </AuthProvider>

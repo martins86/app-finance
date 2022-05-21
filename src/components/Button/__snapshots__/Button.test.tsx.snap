@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Button /> Should match snapshot 1`] = `
+<div>
+  <button
+    class="any-class-style"
+    data-testid="button"
+    title="Any Text"
+    type="button"
+  >
+    Any Text
+  </button>
+</div>
+`;

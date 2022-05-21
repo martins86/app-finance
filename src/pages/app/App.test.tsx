@@ -10,4 +10,10 @@ describe('Test <App />', () => {
 
     expect(text).toBeInTheDocument();
   });
+
+  test('Should match snapshot', () => {
+    const { container } = render(<App />);
+
+    expect(container).toMatchSnapshot();
+  });
 });
