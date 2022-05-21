@@ -1,9 +1,7 @@
 import './styles.css';
 
 const TableTransactions = () => {
-    return (
-        <div>TableTransactions</div>
-    );
+  return <div>TableTransactions</div>;
 };
 
 export default TableTransactions;

@@ -1,0 +1,7 @@
+{
+  "*.{js,jsx,ts,tsx,md,css}": [
+    "npm run prettier-write",
+    "git add",
+    "npm run prettier-check"
+  ]
+}

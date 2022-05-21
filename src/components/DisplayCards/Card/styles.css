@@ -1,56 +1,56 @@
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 5px;
-    padding: 15px;
-    width: 30%;
-    box-shadow: 3px 2px 4px 1px #00000054;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 15px;
+  width: 30%;
+  box-shadow: 3px 2px 4px 1px #00000054;
 }
 
 .card-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    gap: 10px;
-    margin: 14px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px;
+  margin: 14px auto;
 }
 
 .card-title {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .total {
-    font-size: 1.4rem;
-    font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 @media (max-width: 750px) {
-    .card-title {
-        font-size: 1.4rem;
-    }
+  .card-title {
+    font-size: 1.4rem;
+  }
 
-    .total {
-        font-size: 1.3rem;
-    }
+  .total {
+    font-size: 1.3rem;
+  }
 
-    svg {
-        display: none;
-    }
+  svg {
+    display: none;
+  }
 }
 
 @media (max-width: 550px) {
-    .card-title {
-        font-size: 1rem;
-    }
+  .card-title {
+    font-size: 1rem;
+  }
 
-    .total {
-        font-size: 0.8rem;
-    }
+  .total {
+    font-size: 0.8rem;
+  }
 
-    svg {
-        display: none;
-    }
+  svg {
+    display: none;
+  }
 }

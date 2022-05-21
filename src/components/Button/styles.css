@@ -1,29 +1,29 @@
 .btn {
-    border-radius: 0.2rem;
-    font-weight: 600;
-    font-size: 1rem;
-    padding: 1rem 1.6rem;
-    cursor: pointer;
+  border-radius: 0.2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 1rem 1.6rem;
+  cursor: pointer;
 }
 
 .btn--full-width {
-    max-width: 350px;
-    width: 100%;
+  max-width: 350px;
+  width: 100%;
 }
 
 .btn--primary {
-    border: none;
-    color: #ffffff;
-    background-color: #046ee5;
+  border: none;
+  color: #ffffff;
+  background-color: #046ee5;
 }
 
 .btn--primary:hover {
-    color: #f4f4f4;
-    background-color: #0263cf;
+  color: #f4f4f4;
+  background-color: #0263cf;
 }
 
 .btn--primary:disabled {
-    color: #d4d4d4;
-    background-color: #85a2c3;
-    cursor: not-allowed;
+  color: #d4d4d4;
+  background-color: #85a2c3;
+  cursor: not-allowed;
 }

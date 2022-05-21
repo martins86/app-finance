@@ -1,8 +1,8 @@
 .display-cards {
-    max-width: 1120px;
-    width: 92%;
-    margin: 0 auto;
-    display: flex;
-    margin-top: -50px;
-    justify-content: space-between;
+  max-width: 1120px;
+  width: 92%;
+  margin: 0 auto;
+  display: flex;
+  margin-top: -50px;
+  justify-content: space-between;
 }

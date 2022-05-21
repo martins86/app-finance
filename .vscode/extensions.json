@@ -1,14 +1,14 @@
 {
-    "recommendations": [
-        "dsznajder.es7-react-js-snippets",
-        "ferrierbenjamin.fold-unfold-all-icone",
-        "donjayamanne.githistory",
-        "eamodio.gitlens",
-        "orta.vscode-jest",
-        "techer.open-in-browser",
-        "sonarsource.sonarlint-vscode",
-        "tabnine.tabnine-vscode",
-        "shardulm94.trailing-spaces",
-        "YuTengjing.vscode-colorize-plus"
-    ]
+  "recommendations": [
+    "dsznajder.es7-react-js-snippets",
+    "ferrierbenjamin.fold-unfold-all-icone",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "orta.vscode-jest",
+    "techer.open-in-browser",
+    "sonarsource.sonarlint-vscode",
+    "tabnine.tabnine-vscode",
+    "shardulm94.trailing-spaces",
+    "YuTengjing.vscode-colorize-plus"
+  ]
 }

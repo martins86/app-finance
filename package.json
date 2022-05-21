@@ -25,7 +25,12 @@
     "test": "react-scripts test",
     "test-coverage": "npm test -- --coverage",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && gh-pages -b gh-pages -d build"
+    "deploy": "gh-pages -b gh-pages -d build",
+    "prettier-write": "npx prettier --write --ignore-unknown .",
+    "prettier-check": "npx prettier --check .",
+    "pre-commit": "npx --no-install lint-staged",
+    "pre-push": "npm run test-coverage && npm run deploy",
+    "postinstall": "npx husky install && chmod ug+x .husky/*"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +51,9 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
   }
 }
