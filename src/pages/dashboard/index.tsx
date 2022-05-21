@@ -25,10 +25,10 @@ const Dashboard = () => {
             .filter((item: any) => !item.expense)
             .map((transaction: any) => Number(transaction.amount));
 
-        const expenseValue = amountExpense.reduce((acc: any, cur: any) => acc + cur, 0).toFixed(2);
-        const incomeValue = amountIncome.reduce((acc: any, cur: any) => acc + cur, 0).toFixed(2);
+        const expenseValue = Number(amountExpense.reduce((acc: any, cur: any) => acc + cur, 0).toFixed(2));
+        const incomeValue = Number(amountIncome.reduce((acc: any, cur: any) => acc + cur, 0).toFixed(2));
 
-        const totalValue = Number(Math.abs(incomeValue - expenseValue).toFixed(2));
+        const totalValue = Number((incomeValue - expenseValue).toFixed(2));
 
         setIncome(incomeValue);
         setExpense(expenseValue);
