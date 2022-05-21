@@ -1,10 +1,13 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 import App from '.';
 
 describe('Test <App />', () => {
-  test('renders learn react link', () => {
+  test('Should render App correctly with text "SISTEMA DE LOGIN"', () => {
     render(<App />);
-    expect(1).toBe(1);
+
+    const text = screen.getByText('SISTEMA DE LOGIN');
+
+    expect(text).toBeInTheDocument();
   });
 });
