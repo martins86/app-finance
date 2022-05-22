@@ -20,6 +20,9 @@ const SignUp = () => {
   const [error, setError] = useState('');
 
   const handleSingUp = () => {
+    console.log(validateEmail.test(email));
+    console.log(validateEmail.test(emailConf));
+
     if (!email || !emailConf || !password) {
       setError('* Preencha todos os campos');
       return;
@@ -28,8 +31,13 @@ const SignUp = () => {
       return;
     } else if (!validateEmail.test(email)) {
       setError(`* ${email} não é um e-mail válido`);
+      return;
     } else if (!validateEmail.test(emailConf)) {
       setError(`* ${emailConf} não é um e-mail válido`);
+      return;
+    } else if (!validateStrongPassword.test(password)) {
+      setError(`* A senha digitada é muito fraca`);
+      return;
     }
 
     const res = signUp(email, password);
