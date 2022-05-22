@@ -3,6 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import useAuth from '../../hooks/use-auth';
 
+import { validateEmail, validateStrongPassword } from './../../utils/RegEx';
+
 import InputType from '../../components/InputType';
 import Button from '../../components/Button';
 
@@ -24,6 +26,10 @@ const SignUp = () => {
     } else if (email !== emailConf) {
       setError('* Os e-mails não são iguais');
       return;
+    } else if (!validateEmail.test(email)) {
+      setError(`* ${email} não é um e-mail válido`);
+    } else if (!validateEmail.test(emailConf)) {
+      setError(`* ${emailConf} não é um e-mail válido`);
     }
 
     const res = signUp(email, password);
