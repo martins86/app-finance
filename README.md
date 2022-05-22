@@ -50,12 +50,12 @@ npx husky add .husky/pre-push "npm run pre-push"
 ### Adicionando scripts
 
 ```sh
-npm set-script test-coverage "npm test -- --coverage"
+npm set-script test-xi "npm test -- --coverage --watchAll=false"
 npm set-script deploy "gh-pages -b gh-pages -d build"
 npm set-script prettier-write "npx prettier --write --ignore-unknown ."
 npm set-script prettier-check "npx prettier --check ."
 npm set-script pre-commit "npx --no-install lint-staged"
-npm set-script pre-push "npm run test-coverage && npm run deploy"
+npm set-script pre-push "npm run test-ci"
 npm set-script postinstall "npx husky install && chmod ug+x .husky/*"
 ```
 

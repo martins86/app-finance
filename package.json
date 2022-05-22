@@ -23,13 +23,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "test-coverage": "npm test -- --coverage",
+    "test-ci": "npm test -- --coverage --watchAll=false",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -b gh-pages -d build",
     "prettier-write": "npx prettier --write --ignore-unknown .",
     "prettier-check": "npx prettier --check .",
     "pre-commit": "npx --no-install lint-staged",
-    "pre-push": "npm run test-coverage && npm run deploy",
+    "pre-push": "npm run test-ci",
     "postinstall": "npx husky install && chmod ug+x .husky/*"
   },
   "eslintConfig": {
@@ -55,5 +55,24 @@
     "husky": "^8.0.1",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2"
+  },
+  "jest": {
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,tsx}",
+      "!<rootDir>/node_modules/",
+      "!<rootDir>/path/to/dir/"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    }
   }
 }
