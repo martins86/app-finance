@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <Header /> Should match snapshot 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <div
+      class="header-content"
+    >
+      <header>
+        <h1
+          class="header-title"
+        >
+          Controle Financeiro
+        </h1>
+      </header>
+      <div
+        class="header-sign-out"
+      >
+        <button
+          class="btn btn--primary btn--full-width"
+          data-testid="button"
+          title="Sair"
+          type="button"
+        >
+          Sair
+        </button>
+      </div>
+    </div>
+  </div>
+  ,
+</div>
+`;

@@ -1,4 +1,8 @@
-import TableItem from './TableItem';
+import {
+  FaRegArrowAltCircleDown,
+  FaRegArrowAltCircleUp,
+  FaTrash,
+} from 'react-icons/fa';
 
 import './styles.css';
 
@@ -31,7 +35,29 @@ const TableTransactions = ({
         </thead>
         <tbody>
           {transactionList?.map((item: any, index: any) => (
-            <TableItem key={index} item={item} onDelete={onDelete} />
+            <tr className="table-itens" key={index}>
+              <td>{item.desc}</td>
+              <td>
+                {Number(item.amount)?.toLocaleString('pt-br', {
+                  style: 'currency',
+                  currency: 'BRL',
+                })}
+              </td>
+              <td>
+                {item.expense ? (
+                  <FaRegArrowAltCircleDown title="Saída" color="red" />
+                ) : (
+                  <FaRegArrowAltCircleUp title="Entrada" color="royalblue" />
+                )}
+              </td>
+              <td>
+                <FaTrash
+                  title="Remover item"
+                  onClick={() => onDelete(item.id)}
+                  color="gray"
+                />
+              </td>
+            </tr>
           ))}
         </tbody>
       </table>

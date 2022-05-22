@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test <TableTransactions /> Should match snapshot 1`] = `
+<div>
+  <div
+    class="form-transactions"
+  >
+    <div
+      class="form-fieldset"
+    >
+      <label
+        for="desc"
+      >
+        Descrição
+      </label>
+      <input
+        class="input-primary"
+        id="desc"
+        placeholder="Digite a descrição"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="form-fieldset"
+    >
+      <label
+        for="amount"
+      >
+        Valor
+      </label>
+      <input
+        class="input-primary"
+        id="amount"
+        min="1"
+        placeholder="Digite o valor"
+        type="number"
+        value=""
+      />
+    </div>
+    <div
+      class="form-fieldset"
+    >
+      <div
+        class="form-radio-group"
+      >
+        <div
+          class="fieldset-item"
+        >
+          <input
+            checked=""
+            class="input-radio"
+            id="rIncome"
+            name="group1"
+            type="radio"
+            value=""
+          />
+          <label
+            for="rIncome"
+            title="Checar como entrada"
+          >
+            Entrada
+          </label>
+        </div>
+        <div
+          class="fieldset-item"
+        >
+          <input
+            class="input-radio"
+            id="rExpenses"
+            name="group1"
+            type="radio"
+            value=""
+          />
+          <label
+            for="rExpenses"
+            title="Checar como saída"
+          >
+            Saída
+          </label>
+        </div>
+      </div>
+    </div>
+    <div
+      class="form-fieldset"
+    >
+      <button
+        class="btn btn--primary"
+        data-testid="button"
+        title="Adicionar"
+        type="button"
+      >
+        Adicionar
+      </button>
+    </div>
+  </div>
+  ,
+</div>
+`;

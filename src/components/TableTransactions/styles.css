@@ -23,16 +23,28 @@
   height: 40px;
 }
 
-.table-titles th:first-child {
+.table-titles th:first-child,
+.table-itens td:first-child {
   width: 40%;
 }
 
-.table-titles th:nth-last-child(1) {
+.table-titles th:nth-last-child(1),
+.table-titles th:nth-last-child(2),
+.table-itens td:nth-last-child(1),
+.table-itens td:nth-last-child(2) {
   text-align: center;
   width: 10%;
 }
 
-.table-titles th:nth-last-child(2) {
-  text-align: center;
-  width: 10%;
+.table-itens:nth-child(odd) td {
+  background-color: #f0f2f5;
+}
+
+.table-itens td {
+  padding: 8px;
+  height: 45px;
+}
+
+.table-itens td:nth-last-child(1) svg {
+  cursor: pointer;
 }

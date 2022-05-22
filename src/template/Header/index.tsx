@@ -14,7 +14,7 @@ const Header = () => {
     <div className="header">
       <div className="header-content">
         <header>
-          <h1 className="header-title ">Controle Financeiro</h1>
+          <h1 className="header-title">Controle Financeiro</h1>
         </header>
         <div className="header-sign-out">
           <Button

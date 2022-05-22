@@ -76,6 +76,7 @@ describe('Test <Button />', () => {
   });
 
   test('Should match snapshot', () => {
+    // Arrange
     const fn = jest.fn();
     const { container } = render(
       <Button
@@ -86,6 +87,7 @@ describe('Test <Button />', () => {
       />
     );
 
+    // Act & Assert
     expect(container).toMatchSnapshot();
   });
 });
