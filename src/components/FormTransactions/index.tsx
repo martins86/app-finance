@@ -37,7 +37,7 @@ const FormTransactions = ({ handleAdd }: any) => {
 
   return (
     <div className="form-transactions">
-      <div className="form-field">
+      <div className="form-fieldset">
         <label htmlFor="desc">Descrição</label>
         <InputType
           type="text"
@@ -49,7 +49,7 @@ const FormTransactions = ({ handleAdd }: any) => {
           onChange={(e: any) => setDesc(e.target.value)}
         />
       </div>
-      <div className="form-field">
+      <div className="form-fieldset">
         <label htmlFor="amount">Valor</label>
         <InputType
           type="number"
@@ -65,29 +65,39 @@ const FormTransactions = ({ handleAdd }: any) => {
           onChange={(e: any) => setAmount(e.target.value)}
         />
       </div>
-      <div className="form-field">
+      <div className="form-fieldset">
         <div className="form-radio-group">
-          <InputType
-            type="radio"
-            id="rIncome"
-            nameField="group1"
-            className="input-radio"
-            defaultChecked
-            onChange={() => setExpense(!isExpense)}
-          />
-          <label htmlFor="rIncome">Entrada</label>
+          <div className="fieldset-item">
+            <InputType
+              type="radio"
+              id="rIncome"
+              nameField="group1"
+              className="input-radio"
+              defaultChecked
+              onChange={() => setExpense(!isExpense)}
+            />
+            <label htmlFor="rIncome" title="Checar como entrada">
+              Entrada
+            </label>
+          </div>
 
-          <InputType
-            type="radio"
-            id="rExpenses"
-            nameField="group1"
-            className="input-radio"
-            onChange={() => setExpense(!isExpense)}
-          />
-          <label htmlFor="rExpenses">Saída</label>
+          <div className="fieldset-item">
+            <InputType
+              type="radio"
+              id="rExpenses"
+              nameField="group1"
+              className="input-radio"
+              onChange={() => setExpense(!isExpense)}
+            />
+            <label htmlFor="rExpenses" title="Checar como saída">
+              Saída
+            </label>
+          </div>
         </div>
       </div>
-      <div className="form-field">btn</div>
+      <div className="form-fieldset">
+        <Button className="btn btn--primary" text="Adicionar" />
+      </div>
     </div>
   );
 };

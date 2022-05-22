@@ -6,3 +6,9 @@
   margin-top: -50px;
   justify-content: space-between;
 }
+
+@media (max-width: 750px) {
+  .display-cards {
+    flex-direction: column;
+  }
+}

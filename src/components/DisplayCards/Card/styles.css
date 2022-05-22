@@ -28,29 +28,16 @@
 }
 
 @media (max-width: 750px) {
-  .card-title {
-    font-size: 1.4rem;
+  .card {
+    width: 100%;
+    margin-bottom: 22px;
   }
 
-  .total {
-    font-size: 1.3rem;
+  .card:last-child {
+    margin-bottom: 0;
   }
 
-  svg {
-    display: none;
-  }
-}
-
-@media (max-width: 550px) {
-  .card-title {
-    font-size: 1rem;
-  }
-
-  .total {
-    font-size: 0.8rem;
-  }
-
-  svg {
-    display: none;
+  .card-header {
+    justify-content: space-between;
   }
 }

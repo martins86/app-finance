@@ -20,7 +20,7 @@ const DisplayCards = ({ income, expense, total }: DisplayCardsParams) => {
       <Card
         titleCard="Entradas"
         Icon={FaRegArrowAltCircleUp}
-        iconColor="blue"
+        iconColor="royalblue"
         value={income}
       />
       <Card

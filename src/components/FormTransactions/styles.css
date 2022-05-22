@@ -11,29 +11,62 @@
   gap: 10px;
 }
 
-.form-field {
+.form-fieldset {
   display: flex;
+  width: 38%;
   flex-direction: column;
-  width: 20%;
   justify-content: center;
   align-items: flex-start;
+}
+
+.form-fieldset:nth-last-child(1) {
+  width: 13%;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.form-fieldset:nth-last-child(2) {
+  width: 19%;
+  align-items: center;
+  margin-top: 18px;
 }
 
 .form-radio-group {
   display: flex;
   align-items: center;
-  width: 220px;
+  margin-left: 18px;
+}
+
+.fieldset-item {
+  width: 90px;
+  display: flex;
+  border: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.fieldset-item label {
+  cursor: pointer;
 }
 
 .input-radio {
-  margin-left: 20px;
   margin-right: 5px;
   accent-color: #d61b1b;
   margin-top: 0;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   .form-transactions {
-    display: grid;
+    display: flow-root;
+    justify-items: center;
+  }
+
+  .form-fieldset,
+  .form-fieldset:nth-last-child(1),
+  .form-fieldset:nth-last-child(2) {
+    width: 100%;
   }
 }
