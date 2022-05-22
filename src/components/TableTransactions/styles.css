@@ -1,3 +1,38 @@
-.container {
+.table {
+  max-width: 1120px;
+  width: 92%;
+  margin: 20px auto;
   display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 3px 2px 4px 1px #00000054;
+  overflow-x: auto;
+}
+
+.table-container {
+  width: 98%;
+}
+
+.table-titles th {
+  padding: 8px;
+  border-bottom: inset;
+  text-align: start;
+  width: 30%;
+  height: 40px;
+}
+
+.table-titles th:first-child {
+  width: 40%;
+}
+
+.table-titles th:nth-last-child(1) {
+  text-align: center;
+  width: 10%;
+}
+
+.table-titles th:nth-last-child(2) {
+  text-align: center;
+  width: 10%;
 }

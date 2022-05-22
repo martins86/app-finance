@@ -1,0 +1,26 @@
+.table-itens:nth-child(odd) td {
+  background-color: #f0f2f5;
+}
+
+.table-itens td {
+  padding: 8px;
+  height: 45px;
+}
+
+.table-itens td:first-child {
+  width: 40%;
+}
+
+.table-itens td:nth-last-child(1) {
+  text-align: center;
+  width: 10%;
+}
+
+.table-itens td:nth-last-child(1) svg {
+  cursor: pointer;
+}
+
+.table-itens td:nth-last-child(2) {
+  text-align: center;
+  width: 10%;
+}

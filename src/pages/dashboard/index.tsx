@@ -52,7 +52,14 @@ const Dashboard = () => {
       <Header />
       <DisplayCards income={income} expense={expense} total={total} />
       <FormTransactions handleAdd={handleAdd} />
-      {transactionList?.length > 0 ? <TableTransactions /> : <div></div>}
+      {transactionList?.length > 0 ? (
+        <TableTransactions
+          transactionList={transactionList}
+          setTransactionList={setTransactionList}
+        />
+      ) : (
+        <div></div>
+      )}
     </div>
   );
 };

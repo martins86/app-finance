@@ -96,7 +96,11 @@ const FormTransactions = ({ handleAdd }: any) => {
         </div>
       </div>
       <div className="form-fieldset">
-        <Button className="btn btn--primary" text="Adicionar" />
+        <Button
+          className="btn btn--primary"
+          text="Adicionar"
+          onClick={handleSave}
+        />
       </div>
     </div>
   );
