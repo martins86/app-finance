@@ -63,6 +63,10 @@ npm install sonarqube-scanner jest-sonar-reporter --save-dev
 npm run sonar-scanner
 ```
 
+```sh
+docker run -d --name sonarqube -e SONAR_ES_BOOTSTRAP_CHECKS_DISABLE=true -p 9000:9000 sonarqube:latest
+```
+
 [SonarQube - LocalHost](http://localhost:9000) <br>
 
 ### Adicionando scripts
