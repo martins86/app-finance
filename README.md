@@ -39,7 +39,7 @@ npm install react-router-dom react-icons
 npm install gh-pages prettier lint-staged husky --save-dev
 ```
 
-### Configurando husky
+### Configurando Husky
 
 ```sh
 npx husky install
@@ -47,16 +47,39 @@ npx husky add .husky/pre-commit "npm run pre-commit"
 npx husky add .husky/pre-push "npm run pre-push"
 ```
 
+### Configurando Lint-staged
+
+```sh
+npm install lint-staged --save-dev
+```
+
+### Configurando Sonar Local
+
+# Instalando o sonarqube-scanner com jest-sonar-reporter
+
+```sh
+npm install sonarqube-scanner jest-sonar-reporter --save-dev
+```
+
+```sh
+npm run sonar-scanner
+```
+
+[SonarQube - LocalHost](http://localhost:9000) <br>
+
 ### Adicionando scripts
 
 ```sh
-npm set-script test-xi "npm test -- --coverage --watchAll=false"
+npm set-script test-ci "npm test -- --coverage --watchAll=false --testResultsProcessor jest-sonar-reporter"
 npm set-script deploy "gh-pages -b gh-pages -d build"
 npm set-script prettier-write "npx prettier --write --ignore-unknown ."
 npm set-script prettier-check "npx prettier --check ."
 npm set-script pre-commit "npx --no-install lint-staged"
 npm set-script pre-push "npm run test-ci"
 npm set-script postinstall "npx husky install && chmod ug+x .husky/*"
+npm set-script sonar-scanner "node sonarqube-scanner.js"
+npm set-script lint "eslint --fix"
+npm set-script lint-report "npm run lint -- -f json -o eslint-report.json"
 ```
 
 <br>

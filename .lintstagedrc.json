@@ -1,5 +1,5 @@
 {
-  "*.{js,jsx,ts,tsx,md,css}": [
+  "*.{js,jsx,ts,tsx,css}": [
     "npm run lint-report",
     "npm run prettier-write",
     "git add",
