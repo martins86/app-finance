@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 
-import App from '.';
+import App from '../pages/app';
 
 describe('Test <App />', () => {
   test('Should render App correctly with text "SISTEMA DE LOGIN"', () => {

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import TableTransactions from '.';
+import TableTransactions from '../components/FormTransactions';
 
 describe('Test <TableTransactions />', () => {
   test('Should match snapshot', () => {

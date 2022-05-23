@@ -1,14 +1,14 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import InputType from '.';
+import DisplayCards from '../components/DisplayCards';
 
-describe('Test <InputType />', () => {
+describe('Test <DisplayCards />', () => {
   test('Should match snapshot', () => {
     // Arrange
     const { container } = render(
       <Router>
-        <InputType />,
+        <DisplayCards />,
       </Router>
     );
 

@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import SignIn from '.';
+import SignIn from '../pages/sign-in';
 
 describe('Test <SignIn />', () => {
   test('Should match snapshot', () => {
