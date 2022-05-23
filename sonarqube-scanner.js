@@ -3,7 +3,7 @@ scanner(
   {
     serverUrl: 'http://localhost:9000',
     login: 'thiagodf',
-    password: 'thiagodf@2022!',
+    password: 'Thiagodf@2022!',
     options: {
       'sonar.sources': './src',
       'sonar.exclusions': '**/*.test.tsx',
@@ -15,6 +15,7 @@ scanner(
       'sonar.tests': './src/myTests',
       'sonar.test.inclusions':
         './src/myTests/**/*.test.tsx,./src/myTests/**/*.test.ts',
+      'sonar.eslint.reportPaths': 'eslint-report.json',
     },
   },
   () => process.exit()
