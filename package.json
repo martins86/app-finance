@@ -31,7 +31,7 @@
     "prettier-write": "npx prettier --write --ignore-unknown .",
     "prettier-check": "npx prettier --check .",
     "pre-commit": "npx --no-install lint-staged",
-    "pre-push": "npm run test-ci",
+    "pre-push": "",
     "postinstall": "npx husky install && chmod ug+x .husky/*",
     "sonar-scanner": "node sonarqube-scanner.js"
   },

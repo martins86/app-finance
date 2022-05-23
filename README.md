@@ -55,8 +55,6 @@ npm install lint-staged --save-dev
 
 ### Configurando Sonar Local
 
-# Instalando o sonarqube-scanner com jest-sonar-reporter
-
 ```sh
 npm install sonarqube-scanner jest-sonar-reporter --save-dev
 ```
