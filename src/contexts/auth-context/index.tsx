@@ -35,7 +35,8 @@ export const AuthProvider = ({ children }: any) => {
 
     if (hasUser?.length) {
       if (hasUser[0].email === email && hasUser[0].password === password) {
-        const token = Math.random().toString(36).substring(2);
+        const enCrypt = require('crypto');
+        const token = enCrypt.randomBytes(18).toString('hex');
         localStorage.setItem('user-token', JSON.stringify({ email, token }));
         setUser({ email, password });
         return;
