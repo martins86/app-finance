@@ -11,8 +11,7 @@ const FormTransactions = ({ handleAdd }: any) => {
   const [isExpense, setExpense] = useState(false);
   const [symbolsArr] = useState(['e', 'E', '+', '-']);
 
-  const enCrypt = require('crypto');
-  const generateID = () => enCrypt.randomBytes(3).toString('hex');
+  const generateID = () => Math.round(Math.random() * 10000);
 
   const handleSave = () => {
     if (!desc || !amount) {
