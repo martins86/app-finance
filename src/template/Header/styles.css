@@ -44,3 +44,10 @@
 .header-sign-out {
   width: 95px;
 }
+
+@media (max-width: 420px) {
+  .header-title {
+    padding-top: 0;
+    font-size: 1.6rem;
+  }
+}
