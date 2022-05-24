@@ -8,7 +8,7 @@ describe('Test <InputType />', () => {
     // Arrange
     const { container } = render(
       <Router>
-        <InputType />,
+        <InputType />
       </Router>
     );
 

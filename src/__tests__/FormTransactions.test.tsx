@@ -1,19 +1,15 @@
 import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import TableTransactions from '../components/TableTransactions';
+import FormTransactions from '../components/FormTransactions';
 
-describe('Test <TableTransactions />', () => {
+describe('Test <FormTransactions />', () => {
   test('Should match snapshot', () => {
     // Arrange
     const fn = jest.fn();
-    const transactionList = [''];
     const { container } = render(
       <Router>
-        <TableTransactions
-          transactionList={transactionList}
-          setTransactionList={fn}
-        />
+        <FormTransactions handleAdd={fn} />
       </Router>
     );
 

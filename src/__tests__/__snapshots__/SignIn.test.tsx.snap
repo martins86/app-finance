@@ -52,6 +52,5 @@ exports[`Test <SignIn /> Should match snapshot 1`] = `
       </label>
     </div>
   </div>
-  ,
 </div>
 `;

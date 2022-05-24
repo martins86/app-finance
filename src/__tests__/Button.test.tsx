@@ -13,7 +13,6 @@ describe('Test <Button />', () => {
 
     // Assert
     expect(elButton).toBeInTheDocument();
-    expect.assertions(1);
   });
 
   test('Should call function on button click', () => {

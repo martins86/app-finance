@@ -99,6 +99,5 @@ exports[`Test <DisplayCards /> Should match snapshot 1`] = `
       />
     </div>
   </div>
-  ,
 </div>
 `;

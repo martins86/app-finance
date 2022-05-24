@@ -8,7 +8,7 @@ describe('Test <Dashboard />', () => {
     // Arrange
     render(
       <Router>
-        <Dashboard />,
+        <Dashboard />
       </Router>
     );
 
@@ -25,7 +25,7 @@ describe('Test <Dashboard />', () => {
     // Arrange
     const { container } = render(
       <Router>
-        <Dashboard />,
+        <Dashboard />
       </Router>
     );
 

@@ -5,6 +5,5 @@ exports[`Test <InputType /> Should match snapshot 1`] = `
   <input
     value=""
   />
-  ,
 </div>
 `;
