@@ -3,8 +3,18 @@
 exports[`Test <InputType /> Should match snapshot 1`] = `
 <div>
   <input
-    value=""
+    autocomplete="on"
+    checked=""
+    class="any className"
+    data-testid="any testid"
+    disabled=""
+    id="any id"
+    min="any min"
+    name="any name"
+    placeholder="any placeholder"
+    required=""
+    type="any type"
+    value="any value"
   />
-  ,
 </div>
 `;

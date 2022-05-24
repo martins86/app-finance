@@ -16,7 +16,7 @@ export interface DisplayCardsParams {
 
 const DisplayCards = ({ income, expense, total }: DisplayCardsParams) => {
   return (
-    <div className="display-cards">
+    <div className="display-cards" data-testid="display-cards">
       <Card
         titleCard="Entradas"
         Icon={FaRegArrowAltCircleUp}

@@ -14,7 +14,6 @@ describe('Test <TableTransactions />', () => {
           transactionList={transactionList}
           setTransactionList={fn}
         />
-        ,
       </Router>
     );
 

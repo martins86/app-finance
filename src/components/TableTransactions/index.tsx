@@ -24,7 +24,7 @@ const TableTransactions = ({
   };
   return (
     <div className="table">
-      <table className="table-container">
+      <table data-testid="table-transactions" className="table-container">
         <thead>
           <tr className="table-titles">
             <th>Descrição</th>

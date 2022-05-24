@@ -4,6 +4,7 @@ exports[`Test <DisplayCards /> Should match snapshot 1`] = `
 <div>
   <div
     class="display-cards"
+    data-testid="display-cards"
   >
     <div
       class="card"
@@ -99,6 +100,5 @@ exports[`Test <DisplayCards /> Should match snapshot 1`] = `
       />
     </div>
   </div>
-  ,
 </div>
 `;

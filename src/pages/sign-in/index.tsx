@@ -38,7 +38,7 @@ const SignIn = () => {
       <div className="sign-in-content">
         <InputType
           type="email"
-          data-testid="email"
+          dataTestId="email"
           className="input-primary"
           placeholder="Digite seu E-mail"
           value={email || ''}
@@ -47,7 +47,7 @@ const SignIn = () => {
 
         <InputType
           type="password"
-          data-testid="password"
+          dataTestId="password"
           className="input-primary"
           placeholder="Digite sua Senha"
           value={password || ''}
