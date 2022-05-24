@@ -18,14 +18,12 @@ exports[`Test <App /> Should match snapshot 1`] = `
       >
         <input
           class="input-primary"
-          data-testid="email"
           placeholder="Digite seu E-mail"
           type="email"
           value=""
         />
         <input
           class="input-primary"
-          data-testid="password"
           placeholder="Digite sua Senha"
           type="password"
           value=""

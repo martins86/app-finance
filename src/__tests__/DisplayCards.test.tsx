@@ -8,7 +8,7 @@ describe('Test <DisplayCards />', () => {
     // Arrange
     const { container } = render(
       <Router>
-        <DisplayCards />
+        <DisplayCards />,
       </Router>
     );
 

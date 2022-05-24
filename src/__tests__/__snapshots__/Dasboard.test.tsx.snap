@@ -34,7 +34,6 @@ exports[`Test <Dashboard /> Should match snapshot 1`] = `
     </div>
     <div
       class="display-cards"
-      data-testid="display-cards"
     >
       <div
         class="card"
@@ -149,7 +148,6 @@ exports[`Test <Dashboard /> Should match snapshot 1`] = `
         </label>
         <input
           class="input-primary"
-          data-testid="desc"
           id="desc"
           placeholder="Digite a descrição"
           type="text"
@@ -166,7 +164,6 @@ exports[`Test <Dashboard /> Should match snapshot 1`] = `
         </label>
         <input
           class="input-primary"
-          data-testid="amount"
           id="amount"
           min="1"
           placeholder="Digite o valor"
@@ -186,7 +183,6 @@ exports[`Test <Dashboard /> Should match snapshot 1`] = `
             <input
               checked=""
               class="input-radio"
-              data-testid="radio-income"
               id="rIncome"
               name="group1"
               type="radio"
@@ -204,7 +200,6 @@ exports[`Test <Dashboard /> Should match snapshot 1`] = `
           >
             <input
               class="input-radio"
-              data-testid="radio-expenses"
               id="rExpenses"
               name="group1"
               type="radio"
@@ -234,5 +229,6 @@ exports[`Test <Dashboard /> Should match snapshot 1`] = `
     </div>
     <div />
   </div>
+  ,
 </div>
 `;

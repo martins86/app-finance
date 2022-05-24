@@ -29,5 +29,6 @@ exports[`Test <Header /> Should match snapshot 1`] = `
       </div>
     </div>
   </div>
+  ,
 </div>
 `;

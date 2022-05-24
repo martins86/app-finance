@@ -8,7 +8,7 @@ describe('Test <SignIn />', () => {
     // Arrange
     const { container } = render(
       <Router>
-        <SignIn />
+        <SignIn />,
       </Router>
     );
 

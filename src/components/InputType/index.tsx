@@ -1,10 +1,10 @@
 import './styles.css';
 
 export interface InputParams {
-  type: string;
+  type?: string;
   id?: string;
   nameField?: string;
-  dataTestId: string;
+  dataTestId?: string;
   className?: string;
   placeholder?: string;
   value?: string;

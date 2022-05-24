@@ -8,7 +8,7 @@ describe('Test <Header />', () => {
     // Arrange
     render(
       <Router>
-        <Header />
+        <Header />,
       </Router>
     );
 
@@ -25,7 +25,7 @@ describe('Test <Header />', () => {
     // Arrange
     render(
       <Router>
-        <Header />
+        <Header />,
       </Router>
     );
 
@@ -40,7 +40,7 @@ describe('Test <Header />', () => {
     // Arrange
     const { container } = render(
       <Router>
-        <Header />
+        <Header />,
       </Router>
     );
 

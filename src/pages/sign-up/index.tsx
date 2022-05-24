@@ -47,7 +47,7 @@ const SignUp = () => {
       return;
     }
 
-    alert(`Sucesso:\nO usuário ${email}\nfoi cadastrado com sucesso!`);
+    alert('Usuário cadastrado com sucesso!');
     navigate('/');
   };
 
@@ -57,7 +57,7 @@ const SignUp = () => {
       <div className="sign-up-content">
         <InputType
           type="email"
-          dataTestId="email"
+          data-testid="email"
           className="input-primary"
           placeholder="Digite seu E-mail"
           value={email || ''}
@@ -66,7 +66,7 @@ const SignUp = () => {
 
         <InputType
           type="email"
-          dataTestId="emailConf"
+          data-testid="email"
           className="input-primary"
           placeholder="Confirme seu E-mail"
           value={emailConf || ''}
@@ -75,7 +75,7 @@ const SignUp = () => {
 
         <InputType
           type="password"
-          dataTestId="password"
+          data-testid="password"
           className="input-primary"
           placeholder="Digite sua Senha"
           value={password || ''}

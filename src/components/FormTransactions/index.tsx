@@ -15,10 +15,10 @@ const FormTransactions = ({ handleAdd }: any) => {
 
   const handleSave = () => {
     if (!desc || !amount) {
-      alert('Alerta:\nInforme a descrição e o valor!');
+      alert('Informe a descrição e o valor!');
       return;
     } else if (amount < 1) {
-      alert('Alerta:\nO valor tem que ser positivo!');
+      alert('O valor tem que ser positivo!');
       return;
     }
 
@@ -42,7 +42,7 @@ const FormTransactions = ({ handleAdd }: any) => {
         <InputType
           type="text"
           id="desc"
-          dataTestId="desc"
+          data-testid="desc"
           className="input-primary"
           placeholder="Digite a descrição"
           value={desc || ''}
@@ -54,7 +54,7 @@ const FormTransactions = ({ handleAdd }: any) => {
         <InputType
           type="number"
           id="amount"
-          dataTestId="amount"
+          data-testid="amount"
           className="input-primary"
           placeholder="Digite o valor"
           value={amount || ''}
@@ -71,7 +71,6 @@ const FormTransactions = ({ handleAdd }: any) => {
             <InputType
               type="radio"
               id="rIncome"
-              dataTestId="radio-income"
               nameField="group1"
               className="input-radio"
               defaultChecked
@@ -86,7 +85,6 @@ const FormTransactions = ({ handleAdd }: any) => {
             <InputType
               type="radio"
               id="rExpenses"
-              dataTestId="radio-expenses"
               nameField="group1"
               className="input-radio"
               onChange={() => setExpense(!isExpense)}
