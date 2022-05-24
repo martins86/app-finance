@@ -68,7 +68,8 @@
       "text"
     ],
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,tsx}",
+      "src/components/**/*.{jsx,tsx}",
+      "src/pages/**/*.{jsx,tsx}",
       "!<rootDir>/node_modules/",
       "!<rootDir>/path/to/dir/"
     ],
